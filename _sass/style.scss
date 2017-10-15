@@ -100,25 +100,62 @@ blockquote {
     font-style: italic;
 }
 
-.achive {    padding-left: 0;
+.achive {
 
+list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    li {disply: list-item;
+
+	}
+
+
+padding-left: 0;
     width: 100%;
-div {    padding-left: 0;
+
+    /*div {    padding-left: 0;
     text-align: left;
     width: 100%;
-   span {
+    display: inline-block;
+    }
+    span {
     float: right;
-    display: inline-block;
+    display: inline;
     position: relative;
-	}
-    h1,h2,h3,h4,h5,h6 {
-    float: left;
-    display: inline-block;
-    position: relative;
-  }
+        @include media-query($on-palm) {
+            float: left;
+    }
+	}*/
 
   }
-  }
+
+.cols {width:100%;
+	display: inline;
+}
+.col1
+	{width: 75%;
+	position: relative;
+        @include media-query($on-palm) {
+	width: 100%;
+	}
+}
+.col2
+	{width: 25%;
+	position: relative;
+	text-align: right;
+	float: right;
+	@include media-query($on-palm) {
+	width: 100%;
+	text-align: left;
+	}
+
+}
+
+
+
+
+
 
 
 #headline {

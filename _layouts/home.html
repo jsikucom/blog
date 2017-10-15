@@ -4,8 +4,12 @@ layout: default
 {% include header-links.html %}
 {{content}}
 {% for post in site.posts %}
-<div class="achive">
-<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
-<span>{% if post.author %} by {{post.author}}, {% endif %}{{post.date | date: '%F'}}</span>
-</div> 
+<ul class="achive">
+<li>
+<div class="cols">
+<div class="col1"><h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3></div>
+<div class="col2">{% if post.author %} by {{post.author}}, {% endif %}{{post.date | date: '%F'}}</div>
+</div>
+</li>
+</ul> 
 {% endfor %}

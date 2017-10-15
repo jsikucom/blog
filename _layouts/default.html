@@ -5,6 +5,7 @@ layout: headbody
 <label id="label-ham" for="hamburger"></label>
 <div class="menu-container">
   <div class="menu"></div>
+  <div class="theme" onclick="theme()" style="background-image: url({{site.baseurl}}/images/theme.svg)"></div>
   <div class="links">
 
 {% include side-links.html %}
@@ -12,6 +13,5 @@ layout: headbody
 </div>
 
 <div class="content">
-<div class="theme" onclick="theme()" style="background-image: url({{site.baseurl}}/images/theme.svg)"></div>
   {{ content }}
 <div class="content">
