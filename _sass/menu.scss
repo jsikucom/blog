@@ -77,13 +77,8 @@
 	a {
 		display: block;
 		color: white;
-        font-size: 26px;
 		text-decoration: none;
-        margin: 2rem 0rem;
-        @include media-query($on-palm) {
-            font-size: 18px;
-            margin: 3rem 0rem;
-        }
+        margin: 1rem 0rem;
         &:hover {
             color: #eee;
         }
