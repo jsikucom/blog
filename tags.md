@@ -1,7 +1,7 @@
 ---
-title: Serch&Tags
+title: Search&Tags
 layout: page
-permalink: /serch_tags/
+permalink: /search_tags/
 ---
 <script>
   (function() {
