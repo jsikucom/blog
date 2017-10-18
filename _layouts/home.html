@@ -4,6 +4,7 @@ layout: default
 {% include header-links.html %}
 {{content}}
 {% for post in site.posts %}
+{% if post.layout contains "post" %}
 <ul class="archive">
 <li>
 <div class="cols">
@@ -12,4 +13,5 @@ layout: default
 </div>
 </li>
 </ul> 
+{% endif %}
 {% endfor %}
