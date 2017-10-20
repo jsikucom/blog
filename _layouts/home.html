@@ -4,7 +4,8 @@ layout: default
 {% include header-links.html %}
 {{content}}
 {% for post in site.posts %}
-{% if post.layout contains "post" %}
+{% unless post.layout contains "redirect" %}
+{% unless post.layout contains "page" %}
 <ul class="archive">
 <li>
 <div class="cols">
@@ -13,5 +14,6 @@ layout: default
 </div>
 </li>
 </ul> 
-{% endif %}
+{% endunless %}
+{% endunless %}
 {% endfor %}
