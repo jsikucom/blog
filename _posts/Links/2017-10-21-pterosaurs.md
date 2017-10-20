@@ -1,5 +1,5 @@
 ---
-title: sikuname
+title: pterosaurs
 layout: redirect
 author: pterosaurs
 tags: site pterosaurs
