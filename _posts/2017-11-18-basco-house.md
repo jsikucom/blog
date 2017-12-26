@@ -1,10 +1,11 @@
 ---
 layout: gallery
-title: basco-small-house-(external-link)
+title: Villa Piedad(external-link)
 tags: small house
 author: siku
 date: '2017-11-29 19:00:00 +0900'
-img:  https://cdn.freshome.com/wp-content/uploads/2013/05/Neat-Interior.jpg
-redirect: https://freshome.com/2013/05/01/wonderful-designers-home-villa-piedad-by-marta-badiola/
+img: https://images.adsttc.com/media/images/5179/edc7/b3fc/4b36/6900/0180/slideshow/8823.jpg
+redirect: https://www.archdaily.com/364942/villa-piedad-marta-badiola
 ---
 <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+
