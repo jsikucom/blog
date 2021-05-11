@@ -4,8 +4,8 @@
 
 @charset "utf-8";
 
-$base-font-family: 'Work Sans', sans-serif;
-$base-font-size:   20px;
+$base-font-family: 'Bodoni', "Bodoni Roman", 'Bodoni Classic', 'Jeju Myeongjo', 'Nanum Myeongjo', serif;
+$base-font-size:   14px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.7;
@@ -14,7 +14,8 @@ $spacing-unit:     30px;
 
 $text-color:       #333;
 $background-color: #fdfdfd;
-$brand-color:      #60c17d;
+$brand-color:      #006d6d; 
+//#60c17d
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -43,6 +44,6 @@ $on-laptop:        1000px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "style"
-;
+@import "folio";
+@import "style";
+@import "menu";

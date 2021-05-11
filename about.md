@@ -1,7 +1,7 @@
 ---
 title: About Hagura
 layout: post
-permalink: /about/
+permalink: /about1/
 published: true
 ---
 

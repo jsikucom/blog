@@ -1,11 +1,24 @@
 ---
 layout: default
 ---
-<h1 class="post-headline">{{page.title}}</h1>
+<div id="headline">
+<ul>
+
+<li>
+      <a href="{{site.baseurl}}/">Home</a>
+      <a href="{{site.baseurl}}/pages/">>pages</a>
+	      <a href="{{site.baseurl}}/gallery/">>gallery</a>&nbsp&nbsp&nbsp
+</li>
+
+<li><h1 class="headline">{{page.title}}</h1></li></ul></div>
+
+
+
+
+
+
+
 <div class="meta"><span>{{page.date | date: '%F'}}</span>
-
-
-
 
 
 
@@ -34,7 +47,6 @@ layout: default
 
 
 
-	      <a href="{{site.baseurl}}/">: home</a>
 </div>
 {{content}}
 

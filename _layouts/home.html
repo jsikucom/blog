@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% include header-links.html %}
+{{content}}
+{% for post in site.posts %}
+{% unless post.layout contains "redirect" %}
+{% unless post.layout contains "page" %}
+<ul class="archive">
+<li>
+<div class="cols">
+<div class="col1"><h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3></div>
+<div class="col2">{% if post.author %}{{post.author}}, {% endif %}{{post.date | date: '%F'}}</div>
+</div>
+</li>
+</ul> 
+{% endunless %}
+{% endunless %}
+{% endfor %}

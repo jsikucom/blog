@@ -1,0 +1,90 @@
+/* Sidemenu */
+.menu-container {
+    position: fixed;
+	width:3rem;
+	height: 3rem;
+	overflow: hidden;
+	left:0;
+	top: 0;
+	transition-delay: .3s;
+}
+
+.menu {
+	position: relative;
+	width: 6rem;
+	height: 6rem;
+	background-color: $brand-color;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+}
+
+#hamburger {
+	display: none;
+}
+
+#label-ham {
+    position: fixed;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	cursor: pointer;
+	tap-highlight-color:transparent;
+	
+	&:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 0.7em;
+  height: 0.15em;
+  background: white;
+  box-shadow: 
+    0 0.25em 0 0 white,
+    0 0.5em 0 0 white;
+		transform: scale(2);
+}
+}
+
+#hamburger:checked ~ .menu-container {
+    width: 200px;
+	height: 100%;
+	transition-delay: 0s;
+        @include media-query($on-palm) {
+            width: 200px;
+    }
+}
+
+#hamburger:checked ~ .menu-container .menu {
+	width: 250vh;
+	height: 250vh;
+	transition: all .3s;
+}
+
+.menu-container .links {
+	position: absolute;
+    left: 110px;
+    width: 100%;
+    top: 200px;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	text-align: left;
+    @include media-query($on-palm) {
+        left: 110px;
+    }
+	a {
+		display: block;
+		color: white;
+		text-decoration: none;
+        margin: 1rem 0rem;
+        &:hover {
+            color: #eee;
+        }
+	}
+}
+
+
+
+
